@@ -41,7 +41,6 @@ function getFromLocalStorage() {
     if(myArray !== null) {
     notes = myArray 
     }
-    console.log(myArray)
 }
 
 function renderTrashNotes () {
