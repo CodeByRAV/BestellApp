@@ -19,14 +19,17 @@ function deleteNote(trashIndex) {
 
 }
 
-function addNotes() {
+function saveData() {
     let noteInputRef = document.getElementById('note_input');
     let noteInput = noteInputRef.value;
 
-    notes.push (noteInput);
+     if(noteInputRef.value != "") {
+        notes.push(noteInput);
+    }
     renderNotes();
     noteInputRef.value = "";
 }
+
 
 function renderTrashNotes () {
     let trashContentRef = document.getElementById('trash-content');
