@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/standard.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <script src="./JS/template.js"></script>
+</head>
+
+<body onload="renderNotes()">
+    <h1>Notizblock</h1>
+    <input id="note_input" type="text">
+    <button  onclick="addNotes()">notiz speichern</button>
+    <h2>notes</h2>
+    <div id="content">    
+    </div>
+    <h2>trash</h2>
+    <div id="trash-content">
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
