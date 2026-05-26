@@ -26,10 +26,22 @@ function saveData() {
      if(noteInputRef.value != "") {
         notes.push(noteInput);
     }
+    saveToLocalStorage();
     renderNotes();
     noteInputRef.value = "";
 }
 
+function saveToLocalStorage() {
+    localStorage.setItem('myNotes', JSON.stringify(notes));
+}
+
+function getFromLocalStorage() {
+    const combinedNotes = localStorage.getItem('combinedNotes');
+    let myArray = JSON.parse(combinedNotes)
+    if(myArray !== null) {
+    notes = myArray 
+    }
+}
 
 function renderTrashNotes () {
     let trashContentRef = document.getElementById('trash-content');
@@ -47,4 +59,9 @@ function renderNotes() {
     for (let indexNote = 0; indexNote < notes.length; indexNote++) {
         contentRef.innerHTML += getNoteTemplate(indexNote);
     }
+}
+
+function init() {
+        getFromLocalStorage();
+        renderNotes(); 
 }
