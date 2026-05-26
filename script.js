@@ -36,11 +36,12 @@ function saveToLocalStorage() {
 }
 
 function getFromLocalStorage() {
-    const combinedNotes = localStorage.getItem('combinedNotes');
+    const combinedNotes = localStorage.getItem('myNotes');
     let myArray = JSON.parse(combinedNotes)
     if(myArray !== null) {
     notes = myArray 
     }
+    console.log(myArray)
 }
 
 function renderTrashNotes () {
