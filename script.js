@@ -33,7 +33,7 @@ function pushArchiveToTrash(indexArchiveNote) {
 function pushArchiveToNote() {
     let aToNote = archiveNotes.splice(indexArchiveNote, 1);
     notes.push(aToNote[0]);
-    renderNotes()
+    renderNotes();
     renderArchivedNotes();
 }
 
