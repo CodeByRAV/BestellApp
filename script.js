@@ -16,14 +16,19 @@ let allNotes = {
     'archiveNotes': [],
 }
 
+function renderAllNotes() {
+    renderNotes();
+    renderTrashNotes();
+    renderArchivedNotes();
+}
+
 function pushNoteToTrash(indexNote) {
     let trashNote = notes.splice(indexNote, 1);
     trashNotes.push(trashNote[0]);
 
     let trashNotesTitle = notesTitles.splice(indexNote, 1);
     trashNotesTitles.push(trashNotesTitle[0]);
-    renderNotes();
-    renderTrashNotes();
+    renderAllNotes();
 }
 
 function pushNoteToArchive(indexNote) {
@@ -33,15 +38,14 @@ function pushNoteToArchive(indexNote) {
     let removedTitle = notesTitles.splice(indexNote, 1);
     archiveNotesTitles.push(removedTitle[0]);
 
-    renderNotes();
-    renderArchivedNotes();
+    renderAllNotes();
 }
 
 function deleteNote(trashIndex) {
     trashNotes.splice(trashIndex, 1);
     trashNotesTitles.splice(trashIndex, 1);
 
-    renderTrashNotes();
+    renderAllNotes();
 }
 
 function pushTrashToArchive(trashIndex) {
@@ -50,8 +54,8 @@ function pushTrashToArchive(trashIndex) {
 
     let removedTitle = trashNotesTitles.splice(trashIndex, 1);
     archiveNotesTitles.push(removedTitle);
-    renderArchivedNotes();
-    renderTrashNotes();
+
+    renderAllNotes();
 }
 
 function pushArchiveToTrash(indexArchiveNote) {
@@ -61,8 +65,7 @@ function pushArchiveToTrash(indexArchiveNote) {
     let removedTitle = archiveNotesTitles.splice(indexArchiveNote, 1);
     trashNotesTitles.push(removedTitle[0]);
 
-    renderTrashNotes();
-    renderArchivedNotes();
+    renderAllNotes();
 }
 
 function pushArchiveToNote(indexArchiveNote) {
@@ -72,8 +75,7 @@ function pushArchiveToNote(indexArchiveNote) {
     let aToNoteTitle = archiveNotesTitles.splice(indexArchiveNote, 1);
     notesTitles.push(aToNoteTitle[0]);
 
-    renderNotes();
-    renderArchivedNotes();
+    renderAllNotes();
 }
 
 function saveData() {
