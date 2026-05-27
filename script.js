@@ -17,6 +17,14 @@ function pushNoteToTrash(indexNote) {
     renderTrashNotes();
 }
 
+function pushNoteToArchive() {
+    let noteToA = notes.splice(indexNote, 1);
+    archiveNotes.push(noteToA[0]);
+
+    let noteTitlesToA = notesTitles.splice(indexNote, 1);
+    archiveNotesTitles.push(noteTitlesToA[0]);
+}
+
 function deleteNote(trashIndex) {
     trashNotes.splice(trashIndex, 1);
     trashNotesTitles.splice(trashIndex, 1);
