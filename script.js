@@ -11,7 +11,7 @@ function pushNoteToTrash(indexNote) {
     let trashNote = notes.splice(indexNote, 1);
     trashNotes.push(trashNote[0]);
 
-    let trashNotesTitle = trashNotesTitles.splice(indexNote, 1);
+    let trashNotesTitle = notesTitles.splice(indexNote, 1);
     trashNotesTitles.push(trashNotesTitle[0]);
     renderNotes();
     renderTrashNotes();
