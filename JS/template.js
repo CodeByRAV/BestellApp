@@ -20,8 +20,8 @@ return `
     <h3>${archiveNotesTitles[indexArchiveNote]}</h3>
     <p>${archiveNotes[indexArchiveNote]}</p>
     <div>
-    <button onclick="archiveToTrash(${indexArchiveNote})" class="btn">X</button>
-    <button onclick="archiveToNote(${indexArchiveNote})" class="btn">N</button>
+    <button onclick="pushArchiveToTrash(${indexArchiveNote})" class="btn">X</button>
+    <button onclick="pushArchiveToNote(${indexArchiveNote})" class="btn">N</button>
 </div>
 `
 }

@@ -23,6 +23,20 @@ function deleteNote(trashIndex) {
 
 }
 
+function pushArchiveToTrash(indexArchiveNote) {
+    let aToTrashNote = archiveNotes.splice(indexArchiveNote, 1);
+    trashNotes.push(aToTrashNote[0]);
+    renderTrashNotes();
+    renderArchivedNotes();
+}
+
+function pushArchiveToNote() {
+    let aToNote = archiveNotes.splice(indexArchiveNote, 1);
+    notes.push(aToNote[0]);
+    renderNotes()
+    renderArchivedNotes();
+}
+
 function saveData() {
     let noteInputRef = document.getElementById('note_input');
     let noteTitleInputRef = document.getElementById('note_title_input');
@@ -64,6 +78,15 @@ function renderTrashNotes() {
 
     for (let trashIndex = 0; trashIndex < trashNotes.length; trashIndex++) {
         trashContentRef.innerHTML += getTrashNoteTemplate(trashIndex);
+    }
+}
+
+function renderArchivedNotes() {
+    let archiveContentRef = document.getElementById('archived-content');
+    archiveContentRef.innerHTML = "";
+
+    for (let indexArchiveNote = 0; indexArchiveNote < archiveNotes.length; indexArchiveNote++) {
+        archiveContentRef.innerHTML += getArchivedNoteTemplate(indexArchiveNote);
     }
 }
 
