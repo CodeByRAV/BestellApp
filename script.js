@@ -7,6 +7,15 @@ let trashNotes = [];
 let archiveNotesTitles = [];
 let archiveNotes = [];
 
+let allNotes = {
+    'notesTitles': ['Italian', 'Japanese', 'Indian'],
+    'notes': ['Pizza', 'Sushi', 'Curry'],
+    'trashNotesTitles': [],
+    'trashNotes': [],
+    'archiveNotesTitles': [],
+    'archiveNotes': [],
+}
+
 function pushNoteToTrash(indexNote) {
     let trashNote = notes.splice(indexNote, 1);
     trashNotes.push(trashNote[0]);
