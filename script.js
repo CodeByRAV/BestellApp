@@ -1,7 +1,11 @@
 let notesTitles = ['Italian', 'Japanese', 'Indian'];
 let notes = ['Pizza', 'Sushi', 'Curry'];
+
 let trashNotesTitles = [];
 let trashNotes = [];
+
+let archiveNotesTitles = [];
+let archiveNotes = [];
 
 function pushNoteToTrash(indexNote) {
     let trashNote = notes.splice(indexNote, 1);
@@ -21,10 +25,13 @@ function deleteNote(trashIndex) {
 
 function saveData() {
     let noteInputRef = document.getElementById('note_input');
+    let noteTitleInputRef = document.getElementById('note_title_input');
     let noteInput = noteInputRef.value;
+    let noteTitle = noteTitleInputRef.value;
 
-     if(noteInputRef.value != "") {
+     if(noteInputRef.value != "" || noteTitleInputRef.value != "") {
         notes.push(noteInput);
+        notesTitles.push(noteTitle)
     }
     saveToLocalStorage();
     renderNotes();

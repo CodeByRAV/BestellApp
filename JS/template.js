@@ -6,7 +6,7 @@ function getTrashNoteTemplate(trashIndex) {
     return `<p>+ T:${trashNotes[trashIndex]} : ${trashNotes[trashIndex]}<button onclick="deleteNote(${trashIndex});">X</button</p>`;
 }
 
-function getArchivedNoteTemplate(indexArchiveNote)
+function getArchivedNoteTemplate(indexArchiveNote) {
 return `
 <div class="note">
     <h3>${archiveNotesTitles[indexArchiveNote]}</h3>
@@ -16,3 +16,4 @@ return `
     <button onclick="archiveToNote(${indexArchiveNote})" class="btn">N</button>
     </div>
 `
+}
