@@ -1,9 +1,9 @@
 function getNoteTemplate(indexNote) {
-    return `<p>+ T:${notesTitles[indexNote]} : ${notes[indexNote]}<button onclick="pushNoteToTrash(${indexNote});">X</button</p>`;
+    return `<p>+ T: ${notesTitles[indexNote]} C: ${notes[indexNote]}<button onclick="pushNoteToTrash(${indexNote});">X</button</p>`;
 }
 
 function getTrashNoteTemplate(trashIndex) {
-    return `<p>+ T:${trashNotes[trashIndex]} : ${trashNotes[trashIndex]}<button onclick="deleteNote(${trashIndex});">X</button</p>`;
+    return `<p>+ T: ${trashNotesTitles[trashIndex]} C: ${trashNotes[trashIndex]}<button onclick="deleteNote(${trashIndex});">X</button</p>`;
 }
 
 function getArchivedNoteTemplate(indexArchiveNote) {
