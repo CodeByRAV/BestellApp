@@ -17,7 +17,7 @@ function getTrashNoteTemplate(trashIndex) {
         <p>${trashNotes[trashIndex]}</p>
         <div>
             <button onclick="deleteNote(${trashIndex});" class="btn">X</button>
-            <button onclick="pushNoteToArchive(${trashIndex});" class="btn">A</button>
+            <button onclick="pushTrashToArchive(${trashIndex});" class="btn">A</button>
         </div>
     </div>`;
 }
