@@ -19,20 +19,29 @@ function pushNoteToTrash(indexNote) {
 
 function deleteNote(trashIndex) {
     trashNotes.splice(trashIndex, 1);
-    renderTrashNotes();
+    trashNotesTitles.splice(trashIndex, 1);
 
+    renderTrashNotes();
 }
 
 function pushArchiveToTrash(indexArchiveNote) {
     let aToTrashNote = archiveNotes.splice(indexArchiveNote, 1);
     trashNotes.push(aToTrashNote[0]);
+
+    let aToTrashNoteTitle = archiveNotes.splice(indexArchiveNote, 1);
+    trashNotes.push(aToTrashNoteTitle [0]);
+
     renderTrashNotes();
     renderArchivedNotes();
 }
 
-function pushArchiveToNote() {
+function pushArchiveToNote(indexArchiveNote) {
     let aToNote = archiveNotes.splice(indexArchiveNote, 1);
     notes.push(aToNote[0]);
+
+    let aToNoteTitle = archiveNotes.splice(indexArchiveNote, 1);
+    trashNotes.push(aToNoteTitle [0]);
+
     renderNotes();
     renderArchivedNotes();
 }
