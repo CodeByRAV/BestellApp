@@ -29,13 +29,16 @@ function saveData() {
     let noteInput = noteInputRef.value;
     let noteTitle = noteTitleInputRef.value;
 
-     if(noteInputRef.value != "" || noteTitleInputRef.value != "") {
-        notes.push(noteInput);
-        notesTitles.push(noteTitle)
+    if (noteInput == "" || noteTitle == "") {
+        return
+
     }
+    notes.push(noteInput);
+    notesTitles.push(noteTitle)
     saveToLocalStorage();
     renderNotes();
     noteInputRef.value = "";
+    noteTitleInputRef.value = "";
 }
 
 function saveToLocalStorage() {
@@ -45,18 +48,18 @@ function saveToLocalStorage() {
 function getFromLocalStorage() {
     const combinedNotes = localStorage.getItem('myNotes');
     let myArray = JSON.parse(combinedNotes)
-    if(myArray !== null) {
-    notes = myArray 
+    if (myArray !== null) {
+        notes = myArray
     }
 }
 
-function renderTrashNotes () {
+function renderTrashNotes() {
     let trashContentRef = document.getElementById('trash-content');
     trashContentRef.innerHTML = "";
 
-        for (let trashIndex = 0; trashIndex < trashNotes.length; trashIndex++) {
-            trashContentRef.innerHTML += getTrashNoteTemplate(trashIndex);
-        }
+    for (let trashIndex = 0; trashIndex < trashNotes.length; trashIndex++) {
+        trashContentRef.innerHTML += getTrashNoteTemplate(trashIndex);
+    }
 }
 
 function renderNotes() {
@@ -69,6 +72,6 @@ function renderNotes() {
 }
 
 function init() {
-        getFromLocalStorage();
-        renderNotes(); 
+    getFromLocalStorage();
+    renderNotes();
 }
