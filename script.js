@@ -78,7 +78,7 @@ function saveData() {
 
     }
     notes.push(noteInput);
-    notesTitles.push(noteTitle)
+    notesTitles.push(noteTitle);
     saveToLocalStorage();
     renderNotes();
     noteInputRef.value = "";
