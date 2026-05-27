@@ -43,13 +43,18 @@ function saveData() {
 
 function saveToLocalStorage() {
     localStorage.setItem('myNotes', JSON.stringify(notes));
+    localStorage.setItem('myTitles', JSON.stringify(notesTitles));
 }
 
 function getFromLocalStorage() {
     const combinedNotes = localStorage.getItem('myNotes');
-    let myArray = JSON.parse(combinedNotes)
-    if (myArray !== null) {
-        notes = myArray
+    const combinedTitles = localStorage.getItem('myTitles');
+    let myNoteArray = JSON.parse(combinedNotes)
+    let myTitleArray = JSON.parse(combinedTitles)
+
+    if (myNoteArray !== null && myTitleArray) {
+        notes = myNoteArray
+        notesTitles = myTitleArray
     }
 }
 
