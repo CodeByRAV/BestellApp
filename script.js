@@ -152,5 +152,5 @@ function renderNotes() {
 
 function init() {
     getFromLocalStorage();
-    renderNotes();
+    renderAllNotes();
 }
