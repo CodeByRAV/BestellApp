@@ -6,13 +6,13 @@ h1 {
     color: #E76C1F;
 }
 
-.h1black {
+.h1-black {
     font-family: "Palanquin Dark", sans-serif;
     font-weight: 700;
     font-size: 48px;
     font-style: bold;
-    color: #363534;
-}
+    color: black;
+}   
 
 
 h2 {
