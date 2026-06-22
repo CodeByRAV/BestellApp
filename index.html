@@ -25,7 +25,7 @@
     <script src="./JS/db.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <header class="site-header">
         <nav>
             <img src="./assets/icon/logo.png" alt="Logo">
@@ -37,12 +37,33 @@
             <div class="hero-section-content">
                 <img src="./assets/icon/burger-hero.png" alt="Animated burger icon">
                 <div class="hero-section-text">
-                    <h1>Burger<span class="h1-black">House</span></h1>
+                    <h1>Burger<span class="h1-black">House</span><img src="./assets/img/reviews.png" alt="Reviews"></h1>
                     <span class="slogan-font">The best of Burgers, Pizza, and Greens, all in one great place.</span>
-                    <img src="./assets/img/reviews.png" alt="Reviews">
+                    
                 </div> 
             </div>
         </section>
+        <section class="menu-section">
+            <div class="category-separator">
+                <img src="./assets/icon/burger-category.png" alt="Burger Menu Icon">
+                <h2>Burgers</h2>
+            </div>
+            <div id="Burgers">
+            </div>
+            
+            <div class="category-separator">
+                <img src="./assets/icon/pizza-category.png" alt="Pizza Menu Icon">
+                <h2>Pizza (30cm)</h2>
+            </div>
+            <div id="Pizza"></div>
+
+            <div class="category-separator">
+                <img src="./assets/icon/salad-category.png" alt="Salad Menu Icon">
+                <h2>Salad</h2>
+            </div>
+            <div id="Salad"></div>
+        </section>
+        
     </main>
     <footer>
 
