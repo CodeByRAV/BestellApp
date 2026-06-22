@@ -1,0 +1,60 @@
+h1 {
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    font-style: bold;
+    color: #E76C1F;
+}
+
+.h1black {
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    font-style: bold;
+    color: #363534;
+}
+
+
+h2 {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: bold;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: normal;
+    color: #FDEADC;
+}
+
+h4 {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: normal;
+}
+
+body {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.basket-font {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: bold;
+}
+
+.slogan-font {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: bold;    
+}
