@@ -1,0 +1,13 @@
+nav {
+    padding-right: 60px;
+    padding-left: 120px;
+    position: absolute;
+    height: 128px;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E76C1F;
+}
