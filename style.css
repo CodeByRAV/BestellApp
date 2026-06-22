@@ -50,3 +50,19 @@ nav {
     background-color: #E76C1F;
     margin: 40px 0;
 }
+
+.site-footer {
+    height: 128px;
+    background-color: #E76C1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    gap: 40px;
+}
+
+.site-footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
