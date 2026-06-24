@@ -1,8 +1,7 @@
 const menu = [
     {
         category: "Burgers",
-        icon: "./assets/icons/burgerIcon.png",
-        description: "Die besten Burger der Welt", 
+        icon: "./assets/icon/burger-category.png",
         dishes:[
             {
                 imageSource: "./assets/img/1-veggie-mushroom-black-burger.png",
@@ -32,8 +31,7 @@ const menu = [
     },  
     {
         category: "Pizza",
-        icon: "./assets/icons/pizzaIcon.png",
-        description: "Die besten Pizzen der Welt", 
+        icon: "./assets/icon/pizza-category.png",
         dishes:[
             {
                 imageSource: "./assets/img/1-pizza-margherita.png",
@@ -63,8 +61,7 @@ const menu = [
     },   
     {
             category: "Salad",
-            icon: "./assets/icons/saladIcon.png",
-            description: "Die besten Salate der Welt",
+            icon: "./assets/icon/salad-category.png",
             dishes:[
                 {
                     imageSource: "./assets/img/1-warm-beef-arugula-salad.png",
