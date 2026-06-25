@@ -5,18 +5,27 @@ function templateCategory(menuCategory, indexMenu) {
                 <h2>${menuCategory.category}</h2>
             </div>
             <div id="${menuCategory.category}-dishes" class="dishes-container">
-                ${templateDishes(menuCategory.dishes)}
+                ${getDishesHTML(menuCategory.dishes)}
             </div>`;
 }
 
-function templateDishes(dishes) {
+function getDishesHTML(dishes) {
     let dishesHTML = "";
-    for (let indexDishes = 0; indexDishes < category.dishes.length; indexDishes++) {
-        const dish = category.dishes[indexDishes];
+    for (let indexDishes = 0; indexDishes < dishes.length; indexDishes++) {
+        const dish = dishes[indexDishes];
         dishesHTML += templateDish(dish);
     }
     return dishesHTML;
 }
 
-function templateDish(dish, indexDishes) {
+function templateDish(dish) {
+    return `<div class="dish">
+                <img src="${dish.imageSource}" alt="${dish.name}">
+                <div class="dish-info">
+                    <h3>${dish.name}</h3>
+                    <p>${dish.ingredients}</p>
+                    <p class="price">${dish.price.toFixed(2)} €</p>
+                </div>
+            </div>`;
+}
 
