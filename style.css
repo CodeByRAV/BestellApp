@@ -75,3 +75,28 @@ nav {
     gap: 16px;
     margin: 50px 0 40px 0;
 }
+
+.dish {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #FDEADC;
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.add-to-basket-button {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.add-to-basket-button:hover {
+    color: #E76C1F;
+    box-shadow: 6px 5px 17px -2px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 6px 5px 17px -2px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 6px 5px 17px -2px rgba(0, 0, 0, 0.28);
+}
