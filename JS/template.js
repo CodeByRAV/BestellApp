@@ -1,7 +1,6 @@
 function templateCategory(menuCategory, indexMenu) {
-
     return `<div class="category-separator">
-                <img src="${menuCategory.icon}}" alt="${menuCategory.alt}}">
+                <img src="${menuCategory.icon}" alt="${menuCategory.alt}">
                 <h2>${menuCategory.category}</h2>
             </div>
             <div id="${menuCategory.category}-dishes" class="dishes-container">
