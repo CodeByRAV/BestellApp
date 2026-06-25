@@ -1,7 +1,8 @@
 const menu = [
     {
-        category: "Burgers",
+        category: "Burger",
         icon: "./assets/icon/burger-category.png",
+        alt: "burger icon",
         dishes:[
             {
                 imageSource: "./assets/img/1-veggie-mushroom-black-burger.png",
@@ -32,6 +33,7 @@ const menu = [
     {
         category: "Pizza",
         icon: "./assets/icon/pizza-category.png",
+        alt: "pizza icon",
         dishes:[
             {
                 imageSource: "./assets/img/1-pizza-margherita.png",
@@ -62,6 +64,7 @@ const menu = [
     {
             category: "Salad",
             icon: "./assets/icon/salad-category.png",
+            alt: "salad icon",
             dishes:[
                 {
                     imageSource: "./assets/img/1-warm-beef-arugula-salad.png",
