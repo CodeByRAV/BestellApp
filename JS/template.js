@@ -5,11 +5,11 @@ function templateCategory(menuCategory, indexMenu) {
                 <h2>${menuCategory.category}</h2>
             </div>
             <div id="${menuCategory.category}-dishes" class="dishes-container">
-                ${templateDishes(menuCategory)}
+                ${templateDishes(menuCategory.dishes)}
             </div>`;
 }
 
-function templateDishes(category) {
+function templateDishes(dishes) {
     let dishesHTML = "";
     for (let indexDishes = 0; indexDishes < category.dishes.length; indexDishes++) {
         const dish = category.dishes[indexDishes];
