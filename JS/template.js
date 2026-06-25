@@ -1,4 +1,4 @@
-function templateCategory(category, indexMenu) {
+function templateCategory(menuCategory, indexMenu) {
 
     return `<div class="category-separator">
                 <img src="${menuCategory.icon}}" alt="${menuCategory.alt}}">
