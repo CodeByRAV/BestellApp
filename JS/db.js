@@ -79,7 +79,7 @@ const menu = [
                     price: 11.90
                 },
                 {
-                    imageSource: "./assets/img/3-green-salad-sea-food.png",
+                    imageSource: "./assets/img/3-green-salad-with-seafood.png",
                     name: "Green Salad with Sea Food",
                     ingredients: "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
                     price: 13.90
