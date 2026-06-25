@@ -66,3 +66,12 @@ nav {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.dishes-container {
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    margin: 50px 0 40px 0;
+}
