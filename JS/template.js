@@ -21,7 +21,7 @@ function templateDish(dish) {
     return `<div class="dish">
                 <img src="${dish.imageSource}" alt="${dish.name}">
                 <div class="dish-info">
-                    <h3>${dish.name}</h3>
+                    <h4>${dish.name}</h4>
                     <p>${dish.ingredients}</p>
                     <p class="price">${dish.price.toFixed(2)} €</p>
                 </div>
