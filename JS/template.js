@@ -1,15 +1,17 @@
 function templateCategory(category, indexMenu) {
 
     return `<div class="category-separator">
-                <img src="${category.icon}}" alt="${category.alt}}">
-                <h2>${category.category}</h2>
+                <img src="${menuCategory.icon}}" alt="${menuCategory.alt}}">
+                <h2>${menuCategory.category}</h2>
             </div>
-            <div id="${category.category}-dishes" class="dishes-container">
-                ${dishesHTML}
+            <div id="${menuCategory.category}-dishes" class="dishes-container">
+                ${templateDishes(menuCategory)}
             </div>`;
 }
 
-function templateDish() 
+function templateDishes(menuCategory, indexMenu) {
 
+}
 
-function templateDishes()
+function templateDish(dish, indexDishes) {
+
