@@ -23,7 +23,10 @@ function templateDish(dish) {
                 <div class="dish-info">
                     <h4>${dish.name}</h4>
                     <p>${dish.ingredients}</p>
+                </div>
+                <div>
                     <p class="price">${dish.price.toFixed(2)} €</p>
+                    <button class="add-to-basket-button" onclick="addToBasket()">Add to Basket</button>
                 </div>
             </div>`;
 }
