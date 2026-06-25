@@ -1,3 +1,7 @@
+function init() {
+    renderCategories();
+}
+
 function renderCategories() {
     let menuContainer = document.getElementById("menus");
     for(let indexMenu = 0; indexMenu < menu.length; indexMenu++) {
