@@ -9,8 +9,13 @@ function templateCategory(category, indexMenu) {
             </div>`;
 }
 
-function templateDishes(menuCategory, indexMenu) {
-
+function templateDishes(category) {
+    let dishesHTML = "";
+    for (let indexDishes = 0; indexDishes < category.dishes.length; indexDishes++) {
+        const dish = category.dishes[indexDishes];
+        dishesHTML += templateDish(dish);
+    }
+    return dishesHTML;
 }
 
 function templateDish(dish, indexDishes) {
