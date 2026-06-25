@@ -78,7 +78,6 @@ nav {
 .dish {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 80%;
     gap: 16px;
     background-color: #FDEADC;
@@ -89,7 +88,13 @@ nav {
 .dish-info-container {
     display: flex;
     gap: 16px;
-    align-items: center;
+}
+
+.dish-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .add-to-basket-button {
@@ -111,7 +116,11 @@ nav {
 .dish-price-button-container {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.dish-price-button-container button {
+    width: 128px;
 }
