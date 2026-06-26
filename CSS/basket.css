@@ -36,3 +36,15 @@ hr.basket-hr {
     overflow-y: auto;
     overflow-x: hidden;
 }
+.checkout-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #E76C1F;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
