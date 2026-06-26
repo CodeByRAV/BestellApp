@@ -29,6 +29,23 @@
     align-items: center;
 }
 
+.summary-separator {
+    width: 100%;
+    max-width: 280px;
+    height: 4px;
+    margin: 16px 0;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.basket-summary {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
 .basket-items {
     overflow-y: auto;
     overflow-x: hidden;
