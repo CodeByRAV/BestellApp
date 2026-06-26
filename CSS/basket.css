@@ -31,19 +31,3 @@ hr.basket-hr {
   border-top: 8px solid #FDEADC;
   border-radius: 5px;
 }
-
-.total-font {
-    font-family: "Palanquin", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    font-style: bold;
-    color: #FFFFFF;
-}
-
-.subtotal-font {
-    font-family: "Palanquin", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    font-style: normal;
-    color: #FFFFFF;
-}
