@@ -90,11 +90,16 @@ nav {
     gap: 16px;
 }
 
+.dish-info-container img {
+    width: 207px;
+    height: 121px;
+}
+
 .dish-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
 }
 
 .add-to-basket-button {
