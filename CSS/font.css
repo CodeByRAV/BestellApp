@@ -86,3 +86,9 @@ body {
     font-style: normal;
     color: #FFFFFF;
 }
+
+.basket-items {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
