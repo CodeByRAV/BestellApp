@@ -80,7 +80,7 @@ nav {
 .dish {
     display: flex;
     justify-content: space-between;
-    width: 567px;
+    width: 667px;
     gap: 16px;
     background-color: #FDEADC;
     border-radius: 15px;
