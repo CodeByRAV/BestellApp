@@ -31,3 +31,8 @@ hr.basket-hr {
   border-top: 8px solid #FDEADC;
   border-radius: 5px;
 }
+
+.basket-items {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
