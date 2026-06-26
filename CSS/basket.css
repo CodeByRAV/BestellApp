@@ -1,0 +1,49 @@
+.basket-section {  
+    margin-top: 220px;
+    width: 300px; 
+    height: 100%;
+    position: sticky;
+    top: 15px;
+    flex-grow: 1;
+}
+
+.basket-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.basket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #363534;
+    border-radius: 15px;
+}
+
+.basket-content {
+    margin-bottom: 40px;
+}
+
+hr.basket-hr {
+    width:50%;
+  border-top: 8px solid #FDEADC;
+  border-radius: 5px;
+}
+
+.total-font {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: bold;
+    color: #FFFFFF;
+}
+
+.subtotal-font {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: normal;
+    color: #FFFFFF;
+}

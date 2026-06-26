@@ -39,6 +39,8 @@ nav {
 
 .menu-section {
     margin-top: 220px;
+    width:calc(100% - 300px);
+    padding: 16px;
 }
 
 .category-separator {
@@ -128,4 +130,8 @@ nav {
 
 .dish-price-button-container button {
     width: 128px;
+}
+
+.menu-and-basket-wrapper {
+    display: flex;
 }
