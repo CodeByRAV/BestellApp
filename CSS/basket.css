@@ -47,6 +47,9 @@
 }
 
 .basket-items {
+    background-color: #FDEADC;
+    border-radius: 15%;
+    width: 260px;
 }
 
 .checkout-button {
