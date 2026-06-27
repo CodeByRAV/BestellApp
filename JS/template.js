@@ -19,14 +19,16 @@ function getDishesHTML(dishes) {
 
 function templateDish(dish) {
     return `<div class="dish">
+                <div class="dish-info-container">
                 <img src="${dish.imageSource}" alt="${dish.name}">
                 <div class="dish-info">
                     <h4>${dish.name}</h4>
                     <p>${dish.ingredients}</p>
                 </div>
-                <div>
-                    <p class="price">${dish.price.toFixed(2)} €</p>
-                    <button class="add-to-basket-button" onclick="addToBasket()">Add to Basket</button>
+                </div>
+                <div class="dish-price-button-container">
+                    <h4 class="price">${dish.price.toFixed(2)} €</h4>
+                    <button class="add-to-basket-button" onclick="addToBasket('${dish.name}', ${dish.price})">Add to Basket</button>
                 </div>
             </div>`;
 }
