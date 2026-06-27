@@ -40,3 +40,33 @@ function templateDish(dish) {
             </div>`;
 }
 
+function templateBasket(basketItemsHTML, subtotal, total) {
+    return `
+        <header class="basket-header">
+            <h3>Your Basket</h3>
+        </header>
+
+        <div class="basket-items">
+            ${basketItemsHTML}
+        </div>
+
+        <div class="basket-summary">
+            <span class="subtotal-font">Subtotal: ${subtotal.toFixed(2)} €</span>
+            <div class="summary-separator"></div>
+            <span class="total-font">Total: ${total.toFixed(2)} €</span>
+        </div>
+
+        <button class="checkout-button">
+            Buy Now ${total.toFixed(2)} €
+        </button>
+    `;
+}
+
+function templateBasketItem(basketItem) {
+    return `
+    <div class="basket-item basket-font">
+    <div>${"1x " + basketItem.name}</div>
+    <div class=""><button>${basketItem.amount}</button><span>${basketItem.price}</span></div>
+    </div>
+    `
+}
