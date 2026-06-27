@@ -29,15 +29,10 @@ function renderBasket() {
     }
 }
 
-function addToBasket(dish, price) {
-    let dishToPush = menu[dish]
-    basket[dish].push(dishToPush [0]);
+function addToBasket(indexMenu, indexDishes) {
+    const dish = menu[indexMenu].dishes[indexDishes];
 
-    let priceToPush = menu[price];
-    basket[price].push(priceToPush[0]);
+    basket.push(dish);
 
-    renderCategories();
     renderBasket();
 }
-
-
