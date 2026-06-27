@@ -22,7 +22,7 @@
     border-radius: 15px;
 }
 
-.basket-content {
+.basket-item-content {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -47,8 +47,6 @@
 }
 
 .basket-items {
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .checkout-button {
