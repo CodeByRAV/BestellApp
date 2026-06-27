@@ -1,4 +1,7 @@
 let basket = [];
+let subtotal = 0;
+let total = 0;
+let deliveryCost = 5;
 
 function init() {
     renderCategories();
@@ -21,6 +24,20 @@ function renderBasket() {
         const basketItem = basket[indexBasket];
         totalPrice += basketItem.price;
 
-        basketContainer.innerHTML += templateBasketItem(basketItem);
+        basketContainer.innerHTML += templateBasketItem(basketItem);    
+        basketContainer.innerHTML += templateBasketSummary(subtotal, total);
     }
 }
+
+function addToBasket(dish, price) {
+    let dishToPush = menu[dish]
+    basket[dish].push(dishToPush [0]);
+
+    let priceToPush = menu[price];
+    basket[price].push(priceToPush[0]);
+
+    renderCategories();
+    renderBasket();
+}
+
+
