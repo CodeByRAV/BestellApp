@@ -1,3 +1,10 @@
+function templateEmptyBasket() {
+    return `<header class="basket-header">
+                <h3>Your Basket</h3>
+            </header>
+        <span>Your Basket is Empty</span>`
+}
+
 function templateCategory(menuCategory, indexMenu) {
     return `<div class="category-separator">
                 <img src="${menuCategory.icon}" alt="${menuCategory.alt}">
