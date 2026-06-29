@@ -33,6 +33,17 @@ function templateDish(dish, indexMenu, indexDishes) {
             </div>`;
 }
 
+function templateEmptyBasket() {
+    return `
+    <div class="basket-content basket-container">
+        <header class="basket-header-empty">
+                <h3>Your Basket</h3>
+            </header>
+        <span class="empty-basket">Your Basket is Empty</span>
+    </div>        
+`
+}
+
 function templateBasket(basketItemsHTML, subtotal, total, deliveryCost) {
     return `
         <header class="basket-header">
