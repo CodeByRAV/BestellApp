@@ -28,7 +28,7 @@ function renderBasket() {
         const basketItem = basket[indexBasket];
 
         subtotal += basketItem.price * basketItem.amount;
-        basketItemsHTML += templateBasketItem(basketItem);
+        basketItemsHTML += templateBasketItem(basketItem, indexBasket);
     }
 
     let total = subtotal + deliveryCost;
@@ -47,7 +47,7 @@ function addToBasket(indexMenu, indexDishes) {
     renderBasket(); 
 }
 
-function increaseDishCounter(basketItem) {
-    basketItem.amount++;
+function increaseDishCounter(indexBasket) {
+    basket[indexBasket].amount++;
     renderBasket(); 
 }
