@@ -1,30 +1,23 @@
-function templateEmptyBasket() {
-    return `<header class="basket-header">
-                <h3>Your Basket</h3>
-            </header>
-        <span>Your Basket is Empty</span>`
-}
-
 function templateCategory(menuCategory, indexMenu) {
     return `<div class="category-separator">
                 <img src="${menuCategory.icon}" alt="${menuCategory.alt}">
                 <h2>${menuCategory.category}</h2>
             </div>
             <div id="${menuCategory.category}-dishes" class="dishes-container">
-                ${getDishesHTML(menuCategory.dishes)}
+                ${getDishesHTML(menuCategory.dishes, indexMenu)}
             </div>`;
 }
 
-function getDishesHTML(dishes) {
+function getDishesHTML(dishes, indexMenu) {
     let dishesHTML = "";
     for (let indexDishes = 0; indexDishes < dishes.length; indexDishes++) {
         const dish = dishes[indexDishes];
-        dishesHTML += templateDish(dish);
+        dishesHTML += templateDish(dish, indexMenu, indexDishes);
     }
     return dishesHTML;
 }
 
-function templateDish(dish) {
+function templateDish(dish, indexMenu, indexDishes) {
     return `<div class="dish">
                 <div class="dish-info-container">
                 <img src="${dish.imageSource}" alt="${dish.name}">
@@ -35,12 +28,12 @@ function templateDish(dish) {
                 </div>
                 <div class="dish-price-button-container">
                     <h4 class="price">${dish.price.toFixed(2)} €</h4>
-                    <button class="add-to-basket-button" onclick="addToBasket('${dish.name}', ${dish.price})">Add to Basket</button>
+                    <button class="add-to-basket-button" onclick="addToBasket('${indexMenu}', ${indexDishes})">Add to Basket</button>
                 </div>
             </div>`;
 }
 
-function templateBasket(basketItemsHTML, subtotal, total) {
+function templateBasket(basketItemsHTML, subtotal, total, deliveryCost) {
     return `
         <header class="basket-header">
             <h3>Your Basket</h3>
@@ -66,7 +59,7 @@ function templateBasketItem(basketItem) {
     return `
     <div class="basket-item basket-font">
     <div>${"1x " + basketItem.name}</div>
-    <div class=""><button>${basketItem.amount}</button><span>${basketItem.price}</span></div>
+    <div class="basket-amount-price"><button>${basketItem.amount +1}</button><span>${basketItem.price}€</span></div>
     </div>
     `
 }
