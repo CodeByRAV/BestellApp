@@ -48,8 +48,14 @@
 
 .basket-items {
     background-color: #FDEADC;
-    border-radius: 15%;
+    border-radius: 15px;
+    padding: 10px;
     width: 260px;
+    gap: 20px;
+}
+
+.basket-item {
+    padding: 10px;
 }
 
 .checkout-button {
@@ -63,4 +69,24 @@
     font-family: "Palanquin", sans-serif;
     font-weight: 600;
     font-size: 16px;
+}
+
+.empty-basket {
+    display: flex;
+    justify-content: center;
+    background-color: #FDEADC;
+    padding: 15px;
+    margin-bottom: 40px;    
+    border-radius: 15px;
+    width: 260px;   
+}
+
+.basket-header-empty {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.basket-amount-price {
+    display: flex;
+    justify-content: space-between;
 }

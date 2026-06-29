@@ -91,3 +91,10 @@ body {
     font-weight: 700;
     font-size: 22px;
 }
+
+.empty-basket {
+    font-family: "Palanquin", sans-serif;
+    font: 600;
+    font-size: 22px;
+    color: black;
+}
