@@ -45,6 +45,7 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost) {
 
         <div class="basket-summary">
             <span class="subtotal-font">Subtotal: ${subtotal.toFixed(2)} €</span>
+            <span class="subtotal-font">Delivery-Fee: ${deliveryCost.toFixed(2)} €</span>
             <div class="summary-separator"></div>
             <span class="total-font">Total: ${total.toFixed(2)} €</span>
         </div>
