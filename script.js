@@ -23,7 +23,7 @@ function renderBasket() {
         basketContainer.innerHTML = templateEmptyBasket();
         return;
     }
-    else {
+
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
         const basketItem = basket[indexBasket];
 
@@ -34,7 +34,6 @@ function renderBasket() {
     let total = subtotal + deliveryCost;
 
     basketContainer.innerHTML = templateBasket(basketItemsHTML, subtotal, total, deliveryCost);
-}
 }
 
 function addToBasket(indexMenu, indexDishes) {
