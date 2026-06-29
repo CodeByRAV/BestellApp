@@ -54,6 +54,7 @@ function increaseDishCounter(indexBasket) {
 
 function decreaseDishCounter(indexBasket) {
     if(basket[indexBasket].amount === 1) {
+        basket[indexBasket].amount = 0;
         basket.splice(indexBasket, 1)
         renderBasket();
         return
