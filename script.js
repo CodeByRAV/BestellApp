@@ -47,13 +47,7 @@ function addToBasket(indexMenu, indexDishes) {
     renderBasket(); 
 }
 
-function increaseDishCounter(indexBasket) {
-    const dish = menu[indexMenu].dishes[indexDishes];
- 
-    dish.amount++;
-
-    if (!basket.includes(dish)) {
-        basket.push(dish);
-    }
+function increaseDishCounter(basketItem) {
+    basketItem.amount++;
     renderBasket(); 
 }

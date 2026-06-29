@@ -44,7 +44,7 @@ function templateEmptyBasket() {
 `
 }
 
-function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBasket) {
+function templateBasket(basketItemsHTML, subtotal, total, deliveryCost) {
     return `
         <header class="basket-header">
             <h3>Your Basket</h3>
@@ -67,11 +67,11 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBas
     `;
 }
 
-function templateBasketItem(basketItem, indexBasket) {
+function templateBasketItem(basketItem) {
     return `
     <div class="basket-item basket-font">
     <div>${"1x " + basketItem.name}</div>
-    <div class="basket-amount-price"><div class="counter"><button>-</button>${basketItem.amount}<button onclick="addToBasket(indexMenu, indexDishes)">+</button></div><span>${basketItem.price.toFixed(2)}€</span></div>
+    <div class="basket-amount-price"><div class="counter"><button>-</button>${basketItem.amount}<button onclick="increaseDishCounter(basketItem)">+</button></div><span>${basketItem.price.toFixed(2)}€</span></div>
     </div>
     `
 }
