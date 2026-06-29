@@ -38,8 +38,11 @@ function renderBasket() {
 
 function addToBasket(indexMenu, indexDishes) {
     const dish = menu[indexMenu].dishes[indexDishes];
+ 
+    dish.amount++;
 
-    basket.push(dish);
-
+    if (!basket.includes(dish)) {
+        basket.push(dish);
+    }
     renderBasket();
 }
