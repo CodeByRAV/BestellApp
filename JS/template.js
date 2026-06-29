@@ -71,7 +71,7 @@ function templateBasketItem(basketItem) {
     return `
     <div class="basket-item basket-font">
     <div>${"1x " + basketItem.name}</div>
-    <div class="basket-amount-price"><button>${basketItem.amount}</button><span>${basketItem.price.toFixed(2)}€</span></div>
+    <div class="basket-amount-price"><div class="counter"><button>-</button>${basketItem.amount}<button>+</button></div><span>${basketItem.price.toFixed(2)}€</span></div>
     </div>
     `
 }

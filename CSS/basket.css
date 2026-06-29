@@ -90,3 +90,8 @@
     display: flex;
     justify-content: space-between;
 }
+.counter button {
+    background-color: #FDEADC;
+    border: none;
+    cursor: pointer;
+}
