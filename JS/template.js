@@ -85,7 +85,7 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBas
 
 function templateBasketItem(basketItem, indexBasket) {
     return `
-    <div class="basket-item basket-font">
+    <div class="basket-item">
     <div>${"1x " + basketItem.name}</div>
     <div class="basket-amount-price"><div class="counter"><button onclick="decreaseDishCounter(${indexBasket})">-</button>${basketItem.amount}<button onclick="increaseDishCounter(${indexBasket})">+</button></div><span>${basketItem.price.toFixed(2)}€</span></div>
     </div>
