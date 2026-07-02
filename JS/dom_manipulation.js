@@ -1,14 +1,18 @@
-const dialogRef = document.getElementById("orderInProgress");
-
 function openDialog(event) {
-    dialogRef.showModal();
-    dialogRef.classList.add("opened");
+const dialogRef = document.getElementById("orderInProgress");
+if (dialogRef) {
+        dialogRef.showModal();
+        dialogRef.classList.add("dialog-opened");
+    }
     event.stopPropagation()
 }
 
 function closeDialog(event) {
-    dialogRef.close();
-    dialogRef.classList.remove("opened");
+const dialogRef = document.getElementById("orderInProgress");
+if (dialogRef) {
+        dialogRef.close();
+        dialogRef.classList.remove("dialog-opened");
+    }
     event.stopPropagation()
 }
 
