@@ -55,12 +55,12 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBas
         </div>
 
         <div class="basket-summary">
-            <span class="subtotal-font">Subtotal: ${subtotal.toFixed(2)} €</span>
-            <span class="subtotal-font">Delivery-Fee: ${deliveryCost.toFixed(2)} €</span>
+            <span class="subtotal-font">Subtotal: <span>${subtotal.toFixed(2)} €</span></span>
+            <span class="subtotal-font">Delivery-Fee: <span>${deliveryCost.toFixed(2)} €</span></span>
             <div class="summary-separator"></div>
-            <span class="total-font">Total: ${total.toFixed(2)} €</span>
+            <span class="total-font">Total: <span>${total.toFixed(2)} €</span></span>
         </div>
-
+        <div class="checkout-button-container">
         <button class="checkout-button">
             Buy Now ${total.toFixed(2)} €
         </button>

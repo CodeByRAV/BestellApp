@@ -37,6 +37,14 @@ h4 {
     font-style: normal;
 }
 
+h5 {
+    font-family: "Palanquin", sans-serif;
+    font:700;
+    font-size: 42px;
+    color: #FDEADC;
+    text-align: center;
+}
+
 body {
     font-family: "Palanquin", sans-serif;
     font-weight: 500;
@@ -97,4 +105,11 @@ body {
     font: 600;
     font-size: 22px;
     color: black;
+}
+
+.checkout-button {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #FFFFFF;
 }
