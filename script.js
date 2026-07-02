@@ -62,3 +62,7 @@ function decreaseDishCounter(indexBasket) {
     basket[indexBasket].amount--;
     renderBasket(); 
 }
+
+function removeOpenedClass() {
+    dialogRef.classList.remove("dialog-opened");
+}   

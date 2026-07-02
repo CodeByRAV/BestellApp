@@ -61,9 +61,25 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBas
             <span class="total-font">Total: <span>${total.toFixed(2)} €</span></span>
         </div>
         <div class="checkout-button-container">
-        <button class="checkout-button">
+        <button class="checkout-button" onclick="openDialog(event)">
             Buy Now ${total.toFixed(2)} €
         </button>
+        </div>
+        <dialog onclick="closeDialog(event)" onclose="removeOpenedClass()" closedby="any" id="orderInProgress"
+        class="dialog" aria-labelledby="dialog-image-title">
+            <section onclick="stopProp(event)">
+                <div class="dialog-close-button">
+                    <button onclick="closeDialog(event)" aria-label="Close dialog">
+                        <img src="../assets/icon/close.svg" alt="close button">
+                    </button>
+                </div>
+                <div class="dialog-content">
+                    <img src="../assets/icon/truck.png" alt="order confirmed">
+                    <h5>Order confirmed!</h5>
+                    <span class="order-confirmation-font">Your order will be delivered soon!</span>
+                </div>
+            </section>
+        </dialog>
     `;
 }
 
