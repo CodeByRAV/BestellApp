@@ -107,6 +107,13 @@ body {
     color: black;
 }
 
+.order-confirmation-font {
+    font-family: "Palanquin", sans-serif;
+    font:700;
+    font-size: 29px;
+    color: #FDEADC;
+}
+
 .checkout-button {
     font-family: "Palanquin", sans-serif;
     font-weight: 700;
