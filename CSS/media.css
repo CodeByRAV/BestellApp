@@ -1,0 +1,144 @@
+@media screen and (min-width: 870px) and (max-width: 1150px) {
+    nav {
+        padding-right: 34px;
+        padding-left: 60px;
+    }
+
+    .site-header {
+        height: 100px;
+    }
+
+    .nav-logo {
+        width: 64px;
+        height: auto;
+    }
+
+    .burger-menu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .basket-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .basket-header {
+        font-size: 24px;
+    }
+
+    .basket-summary span {
+        font-size: 16px;
+    }
+
+    .checkout-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .basket-items {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .basket-section {
+        width: 120px;
+    }
+
+    .basket-container {
+        padding: 0 1px;
+    }
+
+    .menu-section {
+        width: calc(100% - 220px);
+        padding: 16px;
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+
+    .hero-section-content img {
+        width: 180px;
+        height: auto;
+
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .h1-black {
+        font-size: 40px;
+    }
+
+    .hero-section-text img {
+        width: 120px;
+        height: auto;
+    }
+
+    .slogan-font {
+        font-size: 20px;
+    }
+
+    .category-separator {
+        height: 40px;
+        gap: 8px;
+        padding-left: 10%;
+    }
+
+    .category-separator img {
+        width: 64px;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .menu-and-basket-wrapper {
+        margin-top: 190px;
+    }
+
+    .dishes-container {
+        padding-left: 40px;
+        gap: 10px;
+        margin: 10px 0 20px 0;
+    }
+
+    .dish {
+        gap: 10px;
+        width: 467px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .dish-info-container img {
+        width: 160px;
+        height: 80px;
+    }
+
+    .add-to-basket-button {
+        background-color: #FFFFFF;
+        padding: 4px 8px;
+    }
+
+    .mobile-break {
+        display: block;
+    }
+
+    .dish-price-button-container button {
+        width: 85px;
+    }
+
+    .site-footer-font {
+        font-size: 16px;
+    }
+}

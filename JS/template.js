@@ -28,7 +28,7 @@ function templateDish(dish, indexMenu, indexDishes) {
                 </div>
                 <div class="dish-price-button-container">
                     <h4 class="price">${dish.price.toFixed(2)} €</h4>
-                    <button class="add-to-basket-button" onclick="addToBasket('${indexMenu}', ${indexDishes})">Add to Basket</button>
+                    <button class="add-to-basket-button" onclick="addToBasket('${indexMenu}', ${indexDishes})">Add to <br class="mobile-break"> Basket</button>
                 </div>
             </div>`;
 }
@@ -70,11 +70,11 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBas
             <section onclick="stopProp(event)">
                 <div class="dialog-close-button">
                     <button onclick="closeDialog(event)" aria-label="Close dialog">
-                        <img src="../assets/icon/close.svg" alt="close button">
+                        <img src="./assets/icon/close.svg" alt="close button">
                     </button>
                 </div>
                 <div class="dialog-content">
-                    <img src="../assets/icon/truck.png" alt="order confirmed">
+                    <img src="./assets/icon/Truck.png" alt="order confirmed">
                     <h5>Order confirmed!</h5>
                     <span class="order-confirmation-font">Your order will be delivered soon!</span>
                 </div>

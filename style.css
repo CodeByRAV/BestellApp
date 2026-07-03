@@ -38,8 +38,7 @@ nav {
 }
 
 .menu-section {
-    margin-top: 220px;
-    width:calc(100% - 320px);
+    width: calc(100% - 320px);
     padding: 16px;
 }
 
@@ -51,6 +50,7 @@ nav {
     height: 60px;
     background-color: #E76C1F;
     margin: 40px 0;
+    gap: 16px;
 }
 
 .site-footer {
@@ -134,4 +134,9 @@ nav {
 
 .menu-and-basket-wrapper {
     display: flex;
+    margin-top: 220px;
+}
+
+.mobile-break {
+    display: none;
 }
