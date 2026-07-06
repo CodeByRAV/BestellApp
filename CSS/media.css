@@ -338,8 +338,14 @@
         left: 0;
         top: 0;
         background-color: rgba(0, 0, 0, 0.45);
-        padding: 20px;
+        padding: 0px;
         overflow-y: auto;
+    }
+
+    .basket-container {
+        width: 100%;
+        max-width: 320px;
+        margin-top: 0px;
     }
 
     .menu-section {
@@ -349,7 +355,7 @@
     .basket-section.basket-open {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
     h1 {
@@ -378,5 +384,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+        .basket-section.basket-open .basket-close-button {
+        display: flex;
     }
 }
