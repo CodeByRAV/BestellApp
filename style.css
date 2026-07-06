@@ -25,6 +25,10 @@ nav {
     align-items: center;
 }
 
+    .hero-img-mobile {
+        display: none;
+    }
+
 .hero-section-content {
     display: flex;
     flex-direction: column;
@@ -138,5 +142,9 @@ nav {
 }
 
 .mobile-break {
+    display: none;
+}
+
+.bottom-nav {
     display: none;
 }

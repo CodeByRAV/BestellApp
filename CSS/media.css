@@ -142,3 +142,241 @@
         font-size: 16px;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 869px) {
+    .nav-logo {
+        width: 50px;
+        height: auto;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .menu-section {
+        width: 100%;
+    }
+
+    .dishes-container {
+        padding: 0;
+    }
+
+    .dish {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dish-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dish-info-container img {
+        width: 235px;
+        height: 86px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .dish-price-button-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .category-separator {
+        height: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 3px;
+    }
+
+    .category-separator img {
+        width: 42px;
+        height: auto;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .site-header {
+        height: 70px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .site-footer {
+        flex-direction: column-reverse;
+        gap: 5px
+    }
+
+    .site-footer-font {
+        font-size: 16px;
+    }
+
+    #imprint {
+        order: 1;
+    }
+
+    #cookies {
+        order: 0;
+    }
+
+    .hero-section-content img {
+        width: 90px;
+        height: auto;
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-section-content {
+        transform: translateY(230px);
+    }
+
+    .hero-img-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .basket-header {
+        margin-top: 10px;
+    }
+
+    .basket-close-button {
+        display: block;
+    }
+
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        background-color: #282827;
+        width: 100%;
+        height: 60px;
+    }
+
+    .bottom-nav button {
+        background-color: #282827;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-nav button:hover {
+        background-color: #FFFFFF;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .home-mobile {
+        background-image: url("../assets/icon/home-mobile.svg");
+    }
+
+    .home-mobile:hover {
+        background-image: url("../assets/icon/home-mobile-hover.svg");
+    }
+
+    .account-mobile {
+        background-image: url("../assets/icon/account-mobile.svg");
+    }
+
+    .account-mobile:hover {
+        background-image: url("../assets/icon/account-mobile-hover.svg");
+    }
+
+    .basket-mobile {
+        background-image: url("../assets/icon/basket-mobile.svg");
+    }
+
+    .basket-mobile:hover {
+        background-image: url("../assets/icon/basket-mobile-hover.svg");
+    }
+
+    .logo-mobile {
+        background-image: url("../assets/icon/logo-mobile.svg");
+    }
+
+    .logo-mobile:hover {
+        background-image: url("../assets/icon/logo-mobile-hover.svg");
+    }
+
+    .site-footer {
+        margin-bottom: 60px;
+    }
+
+    .menu-and-basket-wrapper {
+        display: block;
+        margin-top: 200px;
+    }
+
+    .basket-section {
+        display: none;
+        position: fixed;
+        width: auto;
+        height: 100vh;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .menu-section {
+        width: 100%;
+    }
+
+    .basket-section.basket-open {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .h1-black {
+        font-size: 40px;
+    }
+
+    .slogan-font {
+        font-size: 20px;
+    }
+
+    .mobile-counter {
+        position: relative;
+        bottom: 9px;
+        left: 9px;
+        width: 16px;
+        height: 16px;
+        background-color: #FDEADC;
+        color: #E76C1F;
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
