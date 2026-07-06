@@ -19,6 +19,8 @@ function renderBasket() {
     let deliveryCost = 5;
     let basketItemsHTML = "";
 
+    updateMobileCounter();
+
         if (basket.length === 0) {
         basketContainer.innerHTML = templateEmptyBasket();
         return;
@@ -66,3 +68,20 @@ function decreaseDishCounter(indexBasket) {
 function removeOpenedClass() {
     dialogRef.classList.remove("dialog-opened");
 }   
+
+function updateMobileCounter() {
+    let mobileCounter = document.getElementById("mobileCounter");
+    let amount = 0;
+
+    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+        amount += basket[indexBasket].amount;
+    }
+
+    mobileCounter.innerHTML = amount;
+
+    if (amount === 0) {
+        mobileCounter.style.display = "none";
+    } else {
+        mobileCounter.style.display = "flex";
+    }
+}

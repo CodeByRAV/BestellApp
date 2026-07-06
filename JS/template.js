@@ -46,10 +46,17 @@ function templateEmptyBasket() {
 
 function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBasket) {
     return `
-        <header class="basket-header">
+        
+        <header class="basket-header">            
+            <div class="basket-close-button">
+            <button onclick="closeBasket(event)" aria-label="Close basket">
+            <img src="./assets/icon/close.svg" alt="close button">
+            </button>
+            </div>
             <h3>Your Basket</h3>
-        </header>
 
+        </header>
+        
         <div class="basket-items">
             ${basketItemsHTML}
         </div>

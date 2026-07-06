@@ -19,3 +19,17 @@ if (dialogRef) {
 function stopProp(event){
     event.stopPropagation()
 }
+
+function openBasket() {
+    let basketSection = document.getElementById("basketSection");
+    basketSection.classList.add("basket-open");
+}
+
+function closeBasket(event) {
+    let basketSection = document.getElementById("basketSection");
+    basketSection.classList.remove("basket-open");
+
+    if (event) {
+        event.stopPropagation();
+    }
+}
