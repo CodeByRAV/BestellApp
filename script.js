@@ -85,3 +85,8 @@ function updateMobileCounter() {
         mobileCounter.style.display = "flex";
     }
 }
+
+function toggleBasket() {
+    let basketSection = document.getElementById("basketSection");
+    basketSection.classList.toggle("basket-open");
+}

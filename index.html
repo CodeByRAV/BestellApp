@@ -48,7 +48,7 @@
         <div class="menu-and-basket-wrapper">
             <section id="menus" class="menu-section">
             </section>
-            <aside class="basket-section">
+            <aside class="basket-section" id="basketSection">
                 <div class="basket-container">
                     <div id="basket-content" class="basket-content">
                     </div>
@@ -60,8 +60,8 @@
             <button class="account-mobile"></button>
             <button class="logo-mobile"></button>
             
-            <button class="basket-mobile" id="basketBtn">
-                <div class="mobile-counter" id="mobileCounter" onclick="openBasket()"></div>
+            <button class="basket-mobile" id="basketBtn" onclick="toggleBasket()">
+                <div class="mobile-counter" id="mobileCounter"></div>
             </button>
         </nav>
     </main>
