@@ -4,7 +4,7 @@ if (dialogRef) {
         dialogRef.showModal();
         dialogRef.classList.add("dialog-opened");
     }
-    event.stopPropagation()
+    event.stopPropagation();
 }
 
 function closeDialog(event) {
@@ -13,11 +13,11 @@ if (dialogRef) {
         dialogRef.close();
         dialogRef.classList.remove("dialog-opened");
     }
-    event.stopPropagation()
+    event.stopPropagation();
 }
 
 function stopProp(event){
-    event.stopPropagation()
+    event.stopPropagation();
 }
 
 function openBasket() {
