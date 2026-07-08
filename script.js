@@ -95,7 +95,6 @@ function emptyCheckoutBasket() {
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
         basket[indexBasket].amount = 0;
         basket.splice(indexBasket, 1);
-        
     }
     renderBasket();
 }
