@@ -90,3 +90,11 @@ function toggleBasket() {
     let basketSection = document.getElementById("basketSection");
     basketSection.classList.toggle("basket-open");
 }
+
+function emptyCheckoutBasket(event) {
+    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+        basket.splice(indexBasket, 1);
+    }
+    renderBasket();
+    openDialog(event);
+}

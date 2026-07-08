@@ -68,7 +68,7 @@ function templateBasket(basketItemsHTML, subtotal, total, deliveryCost, indexBas
             <span class="total-font">Total: <span>${total.toFixed(2)} €</span></span>
         </div>
         <div class="checkout-button-container">
-        <button class="checkout-button" onclick="openDialog(event)">
+        <button class="checkout-button" onclick="emptyCheckoutBasket(${indexBasket}); openDialog(event)">
             Buy Now ${total.toFixed(2)} €
         </button>
         </div>
